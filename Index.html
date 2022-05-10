@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ComeOn Javascript Test</title>
+    <link href="images/favicon.ico" rel="shortcut icon">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/semantic.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css"/>
+
+    <script src="lib/comeon.game-1.0.min.js"></script>
+    
+
+</head>
+<body>
+<div class="ui one column center aligned page grid">
+    <div class="column twelve wide">
+        <img src="images/logo.svg" alt="logo">
+    </div>
+</div>
+<div class="main container">
+   
+    <div class="casino" style="display:block;">
+        <div class="ui grid centered">
+            <div class="twelve wide column">
+                <div class="ui list">
+
+                    <!-- player item template -->
+                    <div class="player item">
+                        <img class="ui avatar image" src="" alt="avatar">
+
+                        <div class="content">
+                            <div class="header"><b class="name"></b></div>
+                            <div class="description event"></div>
+                        </div>
+                    </div>
+                    <!-- end player item template -->
+
+                </div>
+                <div class="logout ui left floated secondary button inverted">
+                    <i class="left chevron icon"></i>Log Out
+                </div>
+            </div>
+            
+            <div class="four wide column">
+                <div class="search ui small icon input ">
+
+                    <form class="search">
+                    <input type="text" placeholder="Search Game" name="term">
+                    </form>
+                    <i class="search icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="ui grid">
+            <div class="twelve wide column">
+                <h3 class="ui dividing header">Games</h3>
+
+                <div class="ui relaxed divided game items links">
+
+                    <!-- game item template -->
+                    <div class="games"></div>
+                    <!-- end game item template -->
+                    
+                </div>
+            </div>
+            <div class="four wide column">
+                <h3 class="ui dividing header">Categories</h3>
+
+                <div class="ui selection animated list category items">
+                    
+                    <!-- category item template -->
+                    <div class="cate"></div>
+                    <!-- end category item template -->
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="ingame" style="display: none;">
+        <div class="ui grid centered">
+            <div class="three wide column">
+                <div class="ui right floated secondary button inverted"><i class="left chevron icon"></i>Back
+                </div>
+            </div>
+            <div class="ten wide column">
+                <div id="game-launch">
+                </div>
+            </div>
+            <div class="three wide column"></div>
+        </div>
+    </div>
+</div>
+<script src="games.js"></script>
+
+
+
+
+
+
+</body>
+</html>
